@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Credit Card Onboarding </title>
+<meta charset="ISO-8859-1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#p01{
+background-color:lightgray;
+height:25%;
+padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+
+}
+/* Style the header */
+header {
+  background-color: greenyellow;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+height:10%;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 50%;
+  height: 900px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width:50%;
+  background-color: lightyellow;
+  height: 900px; /* only for demonstration, should be removed */
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: mediumblue;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: mediumblue;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+table
+{
+background-color:dodgerblue;
+
+}
+
+marquee
+{
+font-family:lucida calligraphy;
+color:blue;
+}
+#img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hee{
+color:green;
+font-size: 20px;
+font-style: Bold;
+}
+#p1
+{
+color:orange;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a  class="active" href="#home">Home</a>
+  <a  href="#news">About</a>
+  <a  href="registration.html">Apply for Card</a>
+  <div class="topnav-right">
+    <a  href="login.html">Login</a>
+  </div>
+</div>
+
+
+<header>
+<h2 style="color:green">Best Online Bank to Earn More Interest </h2>
+<marquee> ** For Those Who Always Want Something Extra!! ** </marquee>
+</header>
+
+<section>
+  <nav>
+<img src="front.jpg" style="width:900px;height:750px;">
+  </nav>
+  
+  <article>
+   <img src="bank.jpg" id="img1" style="width:500px;height:300px;">
+<br>
+<br>
+<ul id="hee">
+<li>INVESTMENT</li>
+<p id="p1">Manage all your finance with click </p>
+<br>
+<li>COMPARE & BUY</li>
+<p id="p1">Realtime Price Comparsion </p>
+<br>
+<li>LOANS & CARDS</li>
+<p id="p1">Bank offers wide variety of loans and cards </p>
+<br>
+<li>INSURANCE</li>
+<p id="p1">Protect everyone you love </p>
+</ul>
+    <div>
+
+  </article>
+</section>
+</body>
+</html>

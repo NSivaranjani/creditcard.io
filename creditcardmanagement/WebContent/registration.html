@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Credit Card Onboarding </title>
+<meta charset="ISO-8859-1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#p01{
+background-color:lightgray;
+height:25%;
+padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+
+}
+/* Style the header */
+header {
+  background-color: greenyellow;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+height:10%;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 50%;
+  height: 900px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width:50%;
+  background-color: lightyellow;
+  height: 900px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: mediumblue;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: mediumblue;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+table
+{
+background-color:dodgerblue;
+
+}
+#a1:link, #a1:visited {
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border-color:slateblue;
+}
+
+#a1:hover, #a1:active {
+  background-color: dodgerblue;
+}
+#a2:link, #a2:visited {
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+border-color:dodgerblue;
+}
+
+#a2:hover, #a2:active {
+  background-color: dodgerblue;
+}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="homepage.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+  </div> 
+  <div class="subnav">
+    <a href="registration.html">Apply for Card</a>
+    
+  </div> 
+  
+  <a href="#contact">Contact Us</a>
+</div>
+<header>
+<h2 style="color:green">Credit Card Onboarding </h2>
+</header>
+
+<section>
+  <nav>
+<img src="status.jpg" style="width:910px;height:800px;">
+  </nav>
+  
+  <article>
+    <div>
+<form action="./RegisterMemberForm" method="post">
+<br>
+<h3 style="text-align:center">Credit Card Application form </h3>
+<label>First name</label>
+<br>
+<input type="text" id="fname" name="fname" placeholder="your firstname" required>
+<br>
+<br>
+<label>Last name</label>
+<br>
+<input type="text" id="lname" name="lname" placeholder="your lastname" required>
+<br>
+<br>
+<label>Age</label>
+<br><input type="number" id="age" name="age" placeholder="your age" required>
+<br>
+<br>
+
+<label for="gender" >Gender</label>
+    <select name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+<br>
+<br>
+<label>Contact Number</label>
+<br>
+<input type="number" id="cnumber" name="cnumber" placeholder="your contactnumber" required>
+<br>
+<br>
+<label>UID Number</label>
+<br>
+<input type="text" id="unumber" name="unumber" placeholder="your UID number"required>
+<br>
+<br>
+<label>Password</label>
+<br>
+<input type="password" id="password" name="password" required>
+
+<br>
+<br> 
+<label for="country">Set the security questions</label>
+<br>
+    <select>
+      <option value="australia">What is the name of your first school?</option>
+      <option value="canada">what is your pet?</option>
+      <option value="usa">Your favourite color?</option>
+    </select>
+<br>
+<br>
+<input type="text" id="ques" name="ques" required>
+<br>
+<br>
+<input type="submit" value="Submit" > <input type="submit" value="Cancel" >
+</div>
+</form>
+  </article>
+</section>
+</body>
+</html>
